@@ -8,6 +8,12 @@
 
 <div class="changelog-wrapper">
 
+### 2.5.9-beta.40 {page=#/changelog}
+
+* **[update]**:
+    - [Tooltips 工具提示 （指令）](#/tooltips) 增加配置项 disabledHtmlStrAsQuery 支持阻止 QuerySelector
+
+
 ### 2.5.9-beta.39 {page=#/changelog}
 
 * **[update]**:
