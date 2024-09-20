@@ -792,12 +792,11 @@ export default {
       this.isOnComposition = true
     },
     handlerCompositionend (e) {
-      // this.isOnComposition = false
       if (this.inputType === 'number' && this.isOnComposition) {
-        e.target.value = this.curValue
-        this.isOnComposition = false
-        this.handlerInput(e)
+        e.target.value = this.curValue;
       }
+      this.isOnComposition = false;
+      this.handlerInput(e);
     },
     handlerInput (event) {
       // if (this.isOnComposition) {
