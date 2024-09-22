@@ -59,10 +59,12 @@ export default {
     window.addEventListener('scroll', this.toggleBackTop)
     try {
       setTimeout(() => {
-        window.__WPA.create({
-          nameAccount: '800802001',
-          customEle: document.getElementById('contact-us')
-        })
+        if (window.__WPA) {
+          window.__WPA.create({
+            nameAccount: '800802001',
+            customEle: document.getElementById('contact-us')
+          })
+        }
       }, 1000)
     } catch (err) {
       // do
