@@ -793,10 +793,10 @@ export default {
     },
     handlerCompositionend (e) {
       if (this.inputType === 'number' && this.isOnComposition) {
-        e.target.value = this.curValue;
+        e.target.value = this.curValue
       }
-      this.isOnComposition = false;
-      this.handlerInput(e);
+      this.isOnComposition = false
+      this.handlerInput(e)
     },
     handlerInput (event) {
       // if (this.isOnComposition) {
@@ -806,7 +806,7 @@ export default {
       //   event.preventDefault()
       //   return false
       // }
-      if (this.inputType === 'number' && this.isOnComposition) {
+      if (this.isOnComposition) {
         return
       }
 
