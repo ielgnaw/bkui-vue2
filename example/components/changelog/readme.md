@@ -8,6 +8,12 @@
 
 <div class="changelog-wrapper">
 
+### 2.5.9-beta.42 {page=#/changelog}
+
+* **[update]**:
+    - [Input 输入框](#/input) 避免在中文拼音输入时显示中间状态
+
+
 ### 2.5.9-beta.41 {page=#/changelog}
 
 * **[update]**:
