@@ -77,12 +77,13 @@
         <template v-else>
           <input
             v-if="allowCreate && !multiple"
-            class="bk-select-name"
+            class="bk-select-name allow-create"
             ref="createInput"
             @change="handleInputChange"
             :class="fontSizeCls"
             :value="selectedName || value"
-            :title="selectedName" />
+            :title="selectedName"
+            :placeholder="localPlaceholder" />
           <div class="bk-select-name" v-else
             :class="fontSizeCls"
             :title="selectedName">
@@ -608,7 +609,7 @@ export default {
       const popover = this.getPopoverInstance()
       popover.set({
         onShown: () => {
-          if (this.showSearch) {
+          if (this.showSearch && !this.allowCreate) {
             this.$refs.searchInput && this.$refs.searchInput.focus()
           }
         }
