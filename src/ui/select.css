@@ -160,6 +160,9 @@ $disabledColor: #c4c6cc;
         &,&:hover,&:active{
            outline: none;
         }
+        &.allow-create::-webkit-input-placeholder {
+           color: $fnMinorColor;
+        }
     }
     .bk-tooltip.bk-select-dropdown {
         display: block;
