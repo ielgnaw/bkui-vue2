@@ -8,6 +8,12 @@
 
 <div class="changelog-wrapper">
 
+### 2.5.9-beta.43 {page=#/changelog}
+
+* **[fix]**:
+    - [Select 下拉选框](#/select) 修复开启allow-create属性时placeholder不生效和自动聚焦到搜索框问题
+
+
 ### 2.5.9-beta.42 {page=#/changelog}
 
 * **[update]**:
