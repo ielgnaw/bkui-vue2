@@ -504,4 +504,7 @@ $disabledColor: #c4c6cc;
     overflow: hidden;
     border: none;
     outline: none;
+    &::-webkit-input-placeholder {
+      color: $fnMinorColor;
+    }
 }

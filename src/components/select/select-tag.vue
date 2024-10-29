@@ -49,6 +49,7 @@
       v-model="newOptionName"
       class="bk-select-tag-input"
       ref="inputRef"
+      :placeholder="select.selectedOptions.length ? '' : select.localPlaceholder"
       @blur="handleCreateTag"
       @keyup.enter="handleCreateTag" />
   </div>
