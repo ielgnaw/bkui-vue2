@@ -8,6 +8,12 @@
 
 <div class="changelog-wrapper">
 
+### 2.5.9-beta.44 {page=#/changelog}
+
+* **[fix]**:
+    - [Select 下拉选框](#/select) 修复换行失效的问题
+
+
 ### 2.5.9-beta.43 {page=#/changelog}
 
 * **[fix]**:
