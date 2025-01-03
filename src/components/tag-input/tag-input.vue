@@ -28,7 +28,7 @@
 
 <template>
   <div class="bk-tag-selector" :class="[extCls, { resizing }]" @click="focusInputer($event)" ref="bkTagSelector" @mouseenter="mouseEnterHandler" @mouseleave="hover = false">
-    <div :class="['bk-tag-input', { 'active': isEdit, 'disabled': disabled }]">
+    <div :class="['bk-tag-input', { 'active': isEdit, 'disabled': disabled, 'fix-height': fixHeight }]">
       <ul class="tag-list" :class="!localTagList.length ? 'no-item' : ''" ref="tagList" :style="{ 'margin-left': `${leftSpace}px` }">
         <!-- :key="tag[saveKey] !== undefined ? tag[saveKey] : index" -->
         <li
@@ -272,6 +272,12 @@ export default {
     allowRepeat: {
       type: Boolean,
       default: false
+    },
+    // 高度是否固定
+    // 如果高度固定在多行时，会超出显示，不会撑高容器
+    fixHeight: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -437,8 +443,13 @@ export default {
     },
     showPopover () {
       const inputLeft = this.isSingleSelect ? 0 : this.$refs.staffInput.offsetLeft
+      let offsetTop = 0
+      if (this.fixHeight) {
+        offsetTop = this.$refs.staffInput.offsetTop
+      }
+
       this.popoverInstance.instance.set({
-        offset: `${inputLeft}, 0`
+        offset: `${inputLeft}, ${offsetTop}`
       })
 
       if (this.popoverInstance.instance.popperInstance) {

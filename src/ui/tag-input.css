@@ -32,7 +32,28 @@
             }
         }
         &.active {
-            border-color: $newMainColor;
+            &:not(.fix-height) {
+                border-color: $newMainColor;
+            }
+
+            &.fix-height {
+                .tag-list {
+                    border-color: $newMainColor;
+                }
+            }
+        }
+        &.fix-height {
+            overflow: visible;
+            position: relative;
+            border: 1px solid transparent;
+            .tag-list {
+                background: #fff;
+                border: 1px solid #c4c6cc;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+            }
         }
         .placeholder {
             margin: 0;
