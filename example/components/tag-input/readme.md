@@ -936,6 +936,7 @@
         :allow-create="allowCreate"
         :has-delete-icon="hasDeleteIcon"
         :collapse-tags="true"
+        :fix-height="true"
         @change="change">
     </bk-tag-input>
 </template>
@@ -1424,6 +1425,8 @@
 | show-clear-only-hover | 是否在只有 hover 的时候才显示 clear 清除按钮 | Boolean | —— | false |
 | collapse-tags | 失焦是否折叠 tags | Boolean | —— | false |
 | allow-repeat | 是否允许重复输入 | Boolean | —— | false |
+| fix-height | 高度是否固定,如果高度固定在多行时，会超出显示，不会撑高容器 | Boolean | —— | false |
+
 
 ### 事件 {page=#/tag-input}
 | 事件名称 | 说明 | 回调参数 |
