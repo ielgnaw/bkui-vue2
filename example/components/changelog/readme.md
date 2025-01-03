@@ -8,6 +8,12 @@
 
 <div class="changelog-wrapper">
 
+### 2.5.9-beta.46 {page=#/changelog}
+
+* **[fix]**:
+    - [TagInput 标签输入框](#/tag-input) 支持标签展开时固定高度不影响父级容器高度
+
+
 ### 2.5.9-beta.45 {page=#/changelog}
 
 * **[fix]**:
