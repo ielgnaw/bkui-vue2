@@ -8,308 +8,66 @@
 
 <div class="changelog-wrapper">
 
-### 2.5.9-beta.46 {page=#/changelog}
-
-* **[fix]**:
-    - [TagInput 标签输入框](#/tag-input) 支持标签展开时固定高度不影响父级容器高度
-
-
-### 2.5.9-beta.45 {page=#/changelog}
-
-* **[fix]**:
-    - [Select 下拉选框](#/select) 修复开启allow-create属性时placeholder不生效和自动聚焦到搜索框问题
-
-
-### 2.5.9-beta.44 {page=#/changelog}
-
-* **[fix]**:
-    - [Select 下拉选框](#/select) 修复换行失效的问题
-
-
-### 2.5.9-beta.43 {page=#/changelog}
-
-* **[fix]**:
-    - [Select 下拉选框](#/select) 修复开启allow-create属性时placeholder不生效和自动聚焦到搜索框问题
-
-
-### 2.5.9-beta.42 {page=#/changelog}
-
-* **[update]**:
-    - [Input 输入框](#/input) 避免在中文拼音输入时显示中间状态
-
-
-### 2.5.9-beta.41 {page=#/changelog}
-
-* **[update]**:
-    - [Input 输入框](#/input) 避免在中文拼音输入时显示中间状态
-
-
-### 2.5.9-beta.40 {page=#/changelog}
-
-* **[update]**:
-    - [Tooltips 工具提示 （指令）](#/tooltips) 增加配置项 disabledHtmlStrAsQuery 支持阻止 QuerySelector
-
-
-### 2.5.9-beta.39 {page=#/changelog}
-
-* **[update]**:
-    - [Big Tree 大树](#/big-tree) 修复 removeNode 失效的问题
-
-
-### 2.5.9-beta.38 {page=#/changelog}
-
-* **[update]**:
-    - [Progress 进度条](#/progress) size 默认值改为 `small`
-
-
-### 2.5.9-beta.37 {page=#/changelog}
+### 2.5.9 {page=#/changelog}
+###### 2024.01.07
 
 * **[add]**:
     - [Input 输入框](#/input) 新增 `allow-emoji` 属性，配置文本框是否允许输入表情，默认为 `true`
-* **[fix]**:
-    - bugfix(table): selection类型列 header-render失效 #559 & 配置化表格hover全选按钮会丢失填充背景色
-
-
-### 2.5.9-beta.36 {page=#/changelog}
-
-* **[fix]**:
-    - bugfix(input): 修复数字输入框在空值的时候点击上下按键不显示最大/小值的问题
-
-
-### 2.5.9-beta.35 {page=#/changelog}
-
-* **[fix]**:
-    - bugfix(bix-tree): 虚拟滚动模式节点勾选时勾选状态没变
-
-
-### 2.5.9-beta.34 {page=#/changelog}
-
-* **[feat]**:
-    - perf(virtual-scroll): 优化 slot 渲染方式
-
-
-### 2.5.9-beta.33 {page=#/changelog}
-
-* **[feat]**:
-    - [Big Tree 大树](#/big-tree) 性能优化
-
-
-### 2.5.9-beta.32 {page=#/changelog}
-
-* **[feat]**:
-    - [Big Tree 大树](#/big-tree) 性能优化
-
-
-### 2.5.9-beta.31 {page=#/changelog}
-
-* **[feat]**:
-    - [Big Tree 大树](#/big-tree) 性能优化
-
-
-### 2.5.9-beta.30 {page=#/changelog}
-
-* **[feat]**:
     - [TagInput 标签输入框](#/tag-input) 新增 `allow-repeat` 属性，用来支持重复输入，默认为 `false`
-
-
-### 2.5.9-beta.29 {page=#/changelog}
-
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) 当list-item 的 value 为 0 时，无法显示 #543
-
-
-### 2.5.9-beta.27 {page=#/changelog}
-
-* **[fix]**:
-    - [ResizeLayout 可拉伸布局](#/resize-layout) 修复 resize-layout 组件 aside slot 中重新渲染导致无法 collapse 的问题
-
-
-### 2.5.9-beta.26 {page=#/changelog}
-
-* **[fix]**:
-    - [Table 表格](#/table) fix: table抛出selection事件参数数组顺序
-
-
-### 2.5.9-beta.25 {page=#/changelog}
-
-* **[fix]**:
-    - [Table 表格](#/table) fix: shift + click stop user-select
-
-
-### 2.5.9-beta.24 {page=#/changelog}
-
-* **[fix]**:
-    - [Big Tree 大树](#/big-tree) 修复 big-tree 组件开启虚拟滚动后无法正常显示的问题
-
-
-### 2.5.9-beta.23 {page=#/changelog}
-
-* **[fix]**:
-    - [Table 表格](#/table) table 支持shift多选
-
-
-### 2.5.9-beta.22 {page=#/changelog}
-
-* **[fix]**:
-    - [Table 表格](#/table) 修复表格使用fixed固定时，操作行行高错位问题
-    - [Big Tree 大树](#/big-tree) bigTree组件没有横向滚动条
-
-
-### 2.5.9-beta.21 {page=#/changelog}
-
-* **[fix]**:
-    - [Sideslider 侧栏](#/sideslider) 设置pointer-events
-
-
-### 2.5.9-beta.20 {page=#/changelog}
-
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) 修复事件触发参数错误问题
-
-
-### 2.5.9-beta.19 {page=#/changelog}
-
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) 修复 hover trigger 下，选中没有 children 的item，子集面板不更新的问题
-
-
-### 2.5.9-beta.18 {page=#/changelog}
-
-* **[fix]**:
-    - [Sideslider 侧栏](#/sideslider) 解决侧栏无法收起的问题
-
-
-### 2.5.9-beta.17 {page=#/changelog}
-
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) allowDisabledExpand 打开时，禁用项可选
-
----
-
-### 2.5.9-beta.16 {page=#/changelog}
-
-* **[fix]**:
-    - [Sideslider 侧栏](#/sideslider) sideslider的quickClose失效
-
----
-
-### 2.5.9-beta.15 {page=#/changelog}
-
-* **[add]**:
     - [Input 输入框](#/input) 支持配置上下调整数值时的默认起始值
     - [Cascade 级联选框](#/cascade) 禁用允许展开下一级 #516
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) 修复 cascader 在 allowDisabledExpand 下的逻辑缺陷
-* **[update]**:
-    - [ResizeLayout 可拉伸布局](#/resize-layout) 可折叠的样式规范
-
----
-
-### 2.5.9-beta.14 {page=#/changelog}
-
-* **[add]**:
-    - [Cascade 级联选框](#/cascade) 禁用允许展开下一级
-
----
-
-### 2.5.9-beta.13 {page=#/changelog}
-
-* **[add]**:
     - [Select 下拉选框](#/select) tag溢出数字展示tooltips
-
----
-
-### 2.5.9-beta.12 {page=#/changelog}
-
-* **[add]**:
     - [Input 输入框](#/input) 支持show-overflow-tooltips
-
----
-
-### 2.5.9-beta.11 {page=#/changelog}
-
-* **[fix]**:
-    - [Select 下拉选框](#/select) 修复虚拟滚动下”全选“逻辑失效的问题 & 双滚动条修复
-    - [Sideslider 侧栏](#/sideslider) 标题溢出hover使用title展示
-
----
-
-### 2.5.9-beta.10 {page=#/changelog}
-
-* **[add]**:
     - [Cascade 级联选框](#/cascade) 支持自定义 Trigger
-
----
-
-### 2.5.9-beta.9 {page=#/changelog}
-
-* **[fix]**:
-    - [Timeline 时间轴](#/timeline) timeline组件自定义VNode内容不生效
-    - [Select 下拉选框](#/select) 修复虚拟滚动下”全选“逻辑失效的问题
-
----
-
-### 2.5.9-beta.8 {page=#/changelog}
-
-* **[fix]**:
-    - [Sideslider 侧栏](#/sideslider) z-index默认值修正
-
----
-
-### 2.5.9-beta.7 {page=#/changelog}
-
-* **[fix]**:
-    - [Cascade 级联选框](#/cascade) 修复叶子结点相同导致多选错误的问题
-
----
-
-### 2.5.9-beta.6 {page=#/changelog}
-
-* **[add]**:
     - [TagInput 标签输入框](#/tag-input) tooltips 展示被折叠的内容
     - [Cascade 级联选框](#/cascade) 支持extension插槽
-
----
-
-### 2.5.9-beta.5 {page=#/changelog}
-
+    - [TagInput 标签输入框](#/tag-input) 支持 collapseTags
+    - [Select 下拉选框](#/select) 支持 search slot
+    - [TagInput 标签输入框](#/tag-input) 添加 focus 事件
 * **[fix]**:
+    - [TagInput 标签输入框](#/tag-input) 支持标签展开时固定高度不影响父级容器高度
+    - [Select 下拉选框](#/select) 修复开启allow-create属性时placeholder不生效和自动聚焦到搜索框问题
+    - [Select 下拉选框](#/select) 修复换行失效的问题
+    - [Table 表格](#/table) selection类型列 header-render失效 #559 & 配置化表格hover全选按钮会丢失填充背景色
+    - [Input 输入框](#/input) 修复数字输入框在空值的时候点击上下按键不显示最大/小值的问题
+    - [Big Tree 大树](#/big-tree) 虚拟滚动模式节点勾选时勾选状态没变
+    - [Big Tree 大树](#/big-tree) 修复 removeNode 失效的问题
+    - [VirtualScroll 虚拟滚动](#/virtual-scroll) 优化 slot 渲染方式
+    - [Cascade 级联选框](#/cascade) 当list-item 的 value 为 0 时，无法显示 #543
+    - [ResizeLayout 可拉伸布局](#/resize-layout) 修复 resize-layout 组件 aside slot 中重新渲染导致无法 collapse 的问题
+    - [Table 表格](#/table) fix: table抛出selection事件参数数组顺序
+    - [Table 表格](#/table) fix: shift + click stop user-select
+    - [Big Tree 大树](#/big-tree) 修复 big-tree 组件开启虚拟滚动后无法正常显示的问题
+    - [Table 表格](#/table) table 支持shift多选
+    - [Table 表格](#/table) 修复表格使用fixed固定时，操作行行高错位问题
+    - [Big Tree 大树](#/big-tree) bigTree组件没有横向滚动条
+    - [Sideslider 侧栏](#/sideslider) 设置pointer-events
+    - [Cascade 级联选框](#/cascade) 修复事件触发参数错误问题
+    - [Cascade 级联选框](#/cascade) 修复 hover trigger 下，选中没有 children 的item，子集面板不更新的问题
+    - [Sideslider 侧栏](#/sideslider) 解决侧栏无法收起的问题
+    - [Cascade 级联选框](#/cascade) allowDisabledExpand 打开时，禁用项可选
+    - [Sideslider 侧栏](#/sideslider) sideslider的quickClose失效
+    - [Cascade 级联选框](#/cascade) 修复 cascader 在 allowDisabledExpand 下的逻辑缺陷
+    - [Select 下拉选框](#/select) 修复虚拟滚动下”全选“逻辑失效的问题 & 双滚动条修复
+    - [Sideslider 侧栏](#/sideslider) 标题溢出hover使用title展示
+    - [Timeline 时间轴](#/timeline) timeline组件自定义VNode内容不生效
+    - [Select 下拉选框](#/select) 修复虚拟滚动下”全选“逻辑失效的问题
+    - [Sideslider 侧栏](#/sideslider) z-index默认值修正
+    - [Cascade 级联选框](#/cascade) 修复叶子结点相同导致多选错误的问题
     - 修复 [Breadcrumb 面包屑](#/breadcrumb), [Process 步骤](#/process), [ResizeLayout 可拉伸布局](#/resize-layout), [Link 文字链接](#/link), [Button 基础按钮](#/button), [Form 表单](#/form), [Table 表格](#/table), [Pagination 分页](#/pagination), [Tree 树](#/tree), [Card 卡片](#/card), [Notify 通知提示](#/notify), [Checkbox 多选框](#/checkbox), [Radio 单选框](#/radio) 样式规范问题
     - [ResizeLayout 可拉伸布局](#/resize-layout) 修复 ResizeLayout 组件收起功能失效的问题
     - [DatePicker 日期选择器](#/date-picker) 修复 shortcuts 和 shortcutSelectedIndex 属性同时使用时报错的问题
-
----
-
-### 2.5.9-beta.4 {page=#/changelog}
-
-* **[update]**:
-    - [Info 提示框](#/info-box) subTitle 的 word-break 修改为 break-word
-
----
-
-### 2.5.9-beta.3 {page=#/changelog}
-
-* **[fix]**:
     - 修复 [Rate 评分](#/rate), [Dialog 对话框](#/dialog), [Sideslider 侧栏](#/sideslider), [Popconfirm 弹出确认框](#/popconfirm), [Exception 异常提示](#/exception), [Popover 弹出框提示](#/popover), [Loading 加载](#/loading), [Progress 进度条](#/progress), [Cascade 级联选框](#/cascade), [Checkbox 多选框](#/checkbox), [Radio 单选框](#/radio), [Notify 通知提示](#/notify), [Form 表单](#/form), [Input 输入框](#/input), [Select 下拉选框](#/select), [Transfer 穿梭框](#/transfer), [Steps 步骤](#/steps), [Badge 标记](#/badge), [Rate 评分](#/rate) 样式规范问题
+    - [Search 查询搜索](#/search-select) 修复 searchselect checkbox 模式下点击 checkbox 不会选中问题
 * **[update]**:
+    - [Input 输入框](#/input) 避免在中文拼音输入时显示中间状态
+    - [Tooltips 工具提示 （指令）](#/tooltips) 增加配置项 disabledHtmlStrAsQuery 支持阻止 QuerySelector
+    - [Progress 进度条](#/progress) size 默认值改为 `small`
+    - [Big Tree 大树](#/big-tree) 性能优化
+    - [ResizeLayout 可拉伸布局](#/resize-layout) 可折叠的样式规范
+    - [Info 提示框](#/info-box) subTitle 的 word-break 修改为 break-word
     - [Steps 步骤](#/steps) 错误与完成状态的样式优化
 
----
-
-### 2.5.9-beta.2 {page=#/changelog}
-
-* **[add]**:
-    - [TagInput 标签输入框](#/tag-input) 支持 collapseTags
-    - [Select 下拉选框](#/select) 支持 search slot
-
----
-
-### 2.5.9-beta.1 {page=#/changelog}
-
-* **[add]**:
-    - [TagInput 标签输入框](#/tag-input) 添加 focus 事件
-* **[fix]**:
-    - [Search 查询搜索](#/search-select) 修复 searchselect checkbox 模式下点击 checkbox 不会选中问题
 
 ---
 
