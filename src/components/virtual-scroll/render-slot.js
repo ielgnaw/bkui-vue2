@@ -1,6 +1,6 @@
 export default {
   props: {
-    data: Object,
+    data: Object | Number,
     height: {
       type: Number,
       default: 0
