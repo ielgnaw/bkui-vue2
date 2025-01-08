@@ -36,8 +36,8 @@
 }
 
 /* 树伸缩触发器 icon */
-$triggerWidth: 20px; 
-$triggerHeight: 20px; 
+$triggerWidth: 20px;
+$triggerHeight: 20px;
 $triggerMarginRight: 2px;
 
 /* 节点 icon/checkbox */

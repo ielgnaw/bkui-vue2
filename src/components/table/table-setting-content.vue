@@ -45,8 +45,8 @@
           </bk-checkbox>
         </p>
         <bk-checkbox-group v-model="localSelected" class="fields-group">
-          <template v-for="field in fields">
-            <span class="fields-checkbox-wrapper" :key="field[valueKey]">
+          <template>
+            <span class="fields-checkbox-wrapper" v-for="field in fields" :key="field[valueKey]">
               <bk-checkbox class="fields-checkbox"
                 :disabled="field.hasOwnProperty('disabled') ? !!field.disabled : false"
                 :value="field[valueKey]"
