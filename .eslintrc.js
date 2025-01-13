@@ -185,6 +185,8 @@ module.exports = {
     // 如果一个变量不会被重新赋值，必须使用 `const` 进行声明。
     'prefer-const': 'error',
 
+    'no-unused-vars': 'off',
+
     // eslint-plugin-vue@7 新增的规则，暂时先全部关闭
     'vue/no-dupe-v-else-if': 'off',
     'vue/component-definition-name-casing': 'off',

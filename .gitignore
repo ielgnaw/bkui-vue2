@@ -24,7 +24,6 @@ pids
 .example-cache
 dist.zip
 .idea
-package-lock.json
 coverage
 yarn.lock
 .history
